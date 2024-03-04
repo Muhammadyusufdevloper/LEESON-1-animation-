@@ -1,0 +1,79 @@
+#nature{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#000000;
+}
+.nature__wrapper {
+    position: relative;
+    width: 400px;
+    height: 550px;
+    border-radius: 50% 50% 50px 50px;
+    background-color: #a6f3ff;
+    overflow: hidden;
+    animation-name: wrapper;
+    animation-duration: 10s;
+    animation-delay: 0;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.wrapper__sun {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FFF58F;
+    animation-name: sun;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+.wrapper__hill {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+}
+.wrapper__hill:nth-child(1){
+    bottom: -280px;
+    left: -240px;
+    background-color:#E08027;
+}
+.wrapper__hill:nth-child(2){
+    bottom: 220px;
+    right: -140px;
+    background-color:#824B20;
+}
+@keyframes wrapper {
+    0%{
+        background-color:#a6f3ff;
+    }
+    20%{
+        background-color:#8ad9e5 ;
+    }
+    40%{
+        background-color:#6aabb5 ;
+    }
+    60%{
+        background-color:#5a9da7 ;
+    }
+    80%{
+        background-color:#bf9658 ;
+    }
+    100%{
+        background-color:#F2AD43 ;
+    }
+}
+@keyframes sun {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        left: 150px;
+        top: 280px;
+    }
+}
